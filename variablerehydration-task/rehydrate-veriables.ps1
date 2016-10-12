@@ -3,12 +3,12 @@ param(
     [string] $jsonfiles
 )
 $jsonfiles = Get-VstsInput -Name jsonfiles -Require
-
+$jsonfiles = "C:\Users\MartinHinshelwoodnkd\Source\Repos\vsts-variable-hydration-tasks\tests\data\*.json"
 Write-VstsTaskVerbose "jsonfiles: $jsonfiles" 
 
-$jsonfiles = Get-ChildItem -Path $jsonfiles
+$files = Get-ChildItem -Path $jsonfiles
 
-foreach ($file in $jsonfiles)
+foreach ($file in $files)
 {
     Write-Output "Importing $file" 
     Try
