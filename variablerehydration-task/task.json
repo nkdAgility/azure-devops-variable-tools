@@ -27,7 +27,7 @@
             "name": "jsonfiles",
             "type": "filePath",
             "label": "JSON Path",
-            "defaultValue": "**\meta-*.json",
+            "defaultValue": "**\\meta-*.json",
             "required": true,
             "helpMarkDown": "Select the json file, or files to rehydrate."
         }
