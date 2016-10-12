@@ -27,12 +27,12 @@
             "name": "jsonfiles",
             "type": "filePath",
             "label": "JSON Path",
-            "defaultValue": "**/meta-*.json",
+            "defaultValue": "**\\meta-*.json",
             "required": true,
             "helpMarkDown": "Select the json file, or files to rehydrate."
         }
     ],
-    "instanceNameFormat": "Dehydrate $(prefixes) to outpath",
+    "instanceNameFormat": "(re)Hydrate Build Veriables $(jsonfiles)",
     "execution": {
         "PowerShell3": {
             "target": "$(currentDirectory)\\rehydrate-veriables.ps1",

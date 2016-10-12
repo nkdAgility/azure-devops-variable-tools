@@ -6,9 +6,18 @@ $jsonfiles = Get-VstsInput -Name jsonfiles -Require
 
 Write-VstsTaskVerbose "jsonfiles: $jsonfiles" 
 
-$jsonfiles = Get-ChildItem -Path $jsonfiles
+$files = Get-ChildItem -Path $jsonfiles -Recurse
 
-foreach ($file in $jsonfiles)
+Write-Output "Found $($file.count) files in $jsonfiles" 
+
+if ($files.count -eq 0)
+{
+   Write-VstsTaskError "There were no files found. You must specify at least one file to rehydrate. "
+   Write-VstsSetResult -Result Failed -DoNotThrow
+   exit 999
+}
+
+foreach ($file in $files)
 {
     Write-Output "Importing $file" 
     Try
@@ -26,6 +35,7 @@ foreach ($file in $jsonfiles)
         Write-VstsTaskError "Did not get a result retunred from the upload, twas not even JSON!"
         Write-VstsTaskError $ErrorMessage
         Write-VstsTaskError $result
+        Write-VstsSetResult -Result Failed -DoNotThrow
         exit 666
     }
 }
