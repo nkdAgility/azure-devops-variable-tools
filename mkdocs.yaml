@@ -1,0 +1,4 @@
+site_name: VSTS Variable (de|re)Hydration Tasks
+pages:
+- Home: index.md
+theme: readthedocs

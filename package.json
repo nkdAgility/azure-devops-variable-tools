@@ -1,0 +1,34 @@
+{
+  "name": "nkdAgility.vsts-variable-hydration-task",
+  "version": "#{GitVersion.Major}#.#{GitVersion.Minor}#.#{GitVersion.Patch}#",
+  "description": "Build and release tasks for passing build veriables to a release. ",
+  "author": "Martin Hinshelwood",
+  "license": "MIT",
+  "homepage": "https://github.com/nkdAgility/vsts-variable-hydration-tasks#readme",
+  "bugs": {
+    "url": "https://github.com/nkdAgility/vsts-variable-hydration-tasks/issues"
+  },
+  "keywords": [
+    "VSTS",
+    "release",
+    "build",
+    "token",
+    "json",
+    "variable",
+    "hydration"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkdAgility/vsts-variable-hydration-tasks.git"
+  },
+  "devDependencies": {
+    "del": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-debug": "^2.1.2",
+    "gulp-util": "^3.0.0",
+    "merge-stream": "^1.0.0",
+    "shelljs": "^0.3.0",
+    "minimist": "1.1.1",
+    "semver": "4.3.3"
+  }
+}
