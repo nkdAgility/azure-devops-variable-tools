@@ -3,7 +3,7 @@ param(
     [string] $jsonfiles
 )
 $jsonfiles = Get-VstsInput -Name jsonfiles -Require
-$jsonfiles = "C:\Users\MartinHinshelwoodnkd\Source\Repos\vsts-variable-hydration-tasks\tests\data\*.json"
+
 Write-VstsTaskVerbose "jsonfiles: $jsonfiles" 
 
 $files = Get-ChildItem -Path $jsonfiles

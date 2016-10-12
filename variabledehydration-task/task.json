@@ -40,7 +40,7 @@
             "helpMarkDown": "Select a folder to store the dehydrated data."
         }
     ],
-    "instanceNameFormat": "Dehydrate $(prefixes) to outpath",
+    "instanceNameFormat": "(de)Hydrate Build Veriables $(prefixes)",
     "execution": {
         "PowerShell3": {
             "target": "$(currentDirectory)\\dehydrate-veriables.ps1",
