@@ -8,6 +8,14 @@ Write-VstsTaskVerbose "jsonfiles: $jsonfiles"
 
 $files = Get-ChildItem -Path $jsonfiles
 
+Write-Output "Found $($file.count) files in $jsonfiles" 
+
+if ($files.count -eq 0)
+{
+   Write-VstsTaskError "There were no files found"
+   exit 999
+}
+
 foreach ($file in $files)
 {
     Write-Output "Importing $file" 
