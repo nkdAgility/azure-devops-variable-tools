@@ -1,87 +1,91 @@
 {
-    "manifestVersion": 1,
-    "id": "variablehydration",
-    "name": "Variable (de|re)Hydration Tasks",
-    "version": "#{GitVersion.Major}#.#{GitVersion.Minor}#.#{GitVersion.Patch}#",
-    "public": false,
-    "publisher": "nkdAgility",
-    "galleryFlags": [
-        "Private"
-    ],
-    "targets": [
-        {
-            "id": "Microsoft.VisualStudio.Services"
-        }
-    ],    
-    "description": "Includes Build tasks to save (or dehydrate) you build variables and Release tasks to help you load (or rehydrate) then in your release manegment process.",
-    "categories": [
-        "Build and release"
-    ],
-    "tags": [
-        "release",
-        "build",
-        "process",
-        "process template",
-        "template",
-        "upload",
-        "hydrate"
-    ],
-    "links": {
-        "learn": {
-            "uri": "http://vsts-variable-hydration-tasks.readthedocs.io"
-        },
-        "support": {
-            "uri": "https://github.com/nkdAgility/vsts-variable-hydration-tasks/issues"  
-        }
+  "manifestVersion": 1,
+  "id": "variablehydration",
+  "name": "Variable (de|re)Hydration Tasks",
+  "version": "#{GitVersion.Major}#.#{GitVersion.Minor}#.#{GitVersion.Patch}#",
+  "public": false,
+  "publisher": "nkdAgility",
+  "galleryFlags": [
+    "Private"
+  ],
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "description": "Includes Build tasks to save (or dehydrate) you build variables and Release tasks to help you load (or rehydrate) then in your release manegment process.",
+  "categories": [
+    "Build and release"
+  ],
+  "tags": [
+    "release",
+    "build",
+    "process",
+    "process template",
+    "template",
+    "upload",
+    "hydrate"
+  ],
+  "links": {
+    "learn": {
+      "uri": "http://vsts-variable-hydration-tasks.readthedocs.io"
     },
-    "icons": {
-        "default": "images/extension-icon.png"
+    "support": {
+      "uri": "https://github.com/nkdAgility/vsts-variable-hydration-tasks/issues"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/nkdAgility/vsts-variable-hydration-tasks"
+  },
+  "icons": {
+    "default": "images/extension-icon.png"
+  },
+  "branding": {
+    "color": "#1C3272",
+    "theme": "dark"
+  },
+  "screenshots": [
+    {
+      "path": "images/screenshot-01.png"
+    }
+  ],
+  "content": {
+    "details": {
+      "path": "README.md"
     },
-    "branding": {
-        "color": "#1C3272",
-        "theme": "dark"
+    "license": {
+      "path": "LICENSE.txt"
+    }
+  },
+  "files": [
+    {
+      "path": "variablerehydration-task"
     },
-    "screenshots": [
-        {
-            "path": "images/screenshot-01.png"
-        }
-    ],
-    "content": {
-        "details": {
-            "path": "README.md"
-        },
-        "license": {
-            "path": "LICENSE.txt"
-        }
+    {
+      "path": "variabledehydration-task"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "variablerehydration-task",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "variablerehydration-task"
+      }
     },
-    "files": [
-        {
-            "path": "variablerehydration-task"
-        },
-        {
-            "path": "variabledehydration-task"
-        }
-    ],
-    "contributions": [
-        {
-            "id": "variablerehydration-task",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "variablerehydration-task"
-            }
-        },
-        {
-            "id": "variabledehydration-task",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "variabledehydration-task"
-            }
-        }
-    ]
+    {
+      "id": "variabledehydration-task",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "variabledehydration-task"
+      }
+    }
+  ]
 }
