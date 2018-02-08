@@ -6,7 +6,8 @@
     "helpMarkDown": "v#{GitVersion.FullSemVer}# [More Information](https://github.com/nkdAgility/vsts-variable-hydration-tasks#readme)",
     "category": "Utility",
     "visibility": [
-        "Build"
+      "Build",
+      "Release"
     ],
     "author": "Martin Hinshelwood",
     "version": {
