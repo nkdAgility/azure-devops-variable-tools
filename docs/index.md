@@ -15,4 +15,4 @@ Learn more about this extension on the wiki!
 
 After installing the extension, you can add one (or more) of the tasks to a new or existing build definition or release definition
 
-Full documentation is available on [http://vsts-variable-hydration.readthedocs.io](http://vsts-variable-dehydration.readthedocs.io)
+Full documentation is available on [http://vsts-variable-hydration-tasks.readthedocs.io](http://vsts-variable-hydration-tasks.readthedocs.io)

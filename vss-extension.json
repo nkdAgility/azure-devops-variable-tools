@@ -1,12 +1,12 @@
 {
     "manifestVersion": 1,
-    "id": "variablehydration#{GitVersion.PreReleaseLabel}#",
-    "name": "Variable (de|re)Hydration Tasks #{GitVersion.PreReleaseLabel}#",
+    "id": "variablehydration",
+    "name": "Variable (de|re)Hydration Tasks",
     "version": "#{GitVersion.Major}#.#{GitVersion.Minor}#.#{GitVersion.Patch}#",
     "public": false,
     "publisher": "nkdAgility",
     "galleryFlags": [
-        "#{Extension.galleryFlags}#"
+        "Private"
     ],
     "targets": [
         {
