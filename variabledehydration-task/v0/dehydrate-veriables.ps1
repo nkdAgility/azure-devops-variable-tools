@@ -23,7 +23,7 @@ foreach ($prefix in $prefixesList)
 
     Try
     {
-        
+        New-Item -ItemType Directory -Force -Path $outpath
         $result = Get-Childitem -Path $PrefixSearch | select Name,Value | ConvertTo-Json | Out-File $path
         Write-Output "created $result"
     }

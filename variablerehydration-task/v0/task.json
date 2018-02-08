@@ -5,9 +5,10 @@
     "description": "Loads the saved variable file and rehydrates the veriables.",
     "helpMarkDown": "v#{GitVersion.FullSemVer}# [More Information](https://github.com/nkdAgility/vsts-variable-hydration-tasks#readme)",
     "category": "Utility",
-    "visibility": [
-        "Deploy"
-    ],
+  "visibility": [
+    "Build",
+    "Deploy"
+  ],
     "author": "Martin Hinshelwood",
     "version": {
         "Major": #{GitVersion.Major}#,
