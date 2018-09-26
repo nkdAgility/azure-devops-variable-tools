@@ -1,15 +1,15 @@
 {
   "id": "7e7e1b5c-d87d-4a4c-a51a-95de28ce0fb9",
   "name": "variablerehydration",
-  "friendlyName": "Variable (re)Hydration Task",
+  "friendlyName": "Variable Load Task",
   "description": "Loads the saved variables file and rehydrates the variables.",
-  "helpMarkDown": "v#{GitVersion.FullSemVer}# [More Information](https://github.com/nkdAgility/vsts-variable-hydration-tasks#readme)",
+  "helpMarkDown": "v#{GitVersion.FullSemVer}# [More Information](https://dev.azure.com/nkdagility/_git/Azure-DevOps-Variable-Tools?path=%2FREADME.md)",
   "category": "Utility",
   "visibility": [
     "Build",
     "Deploy"
   ],
-  "author": "Martin Hinshelwood",
+  "author": "naked Agility - Martin Hinshelwood",
   "version": {
     "Major": "#{GitVersion.Major}#",
     "Minor": "#{GitVersion.Minor}#",

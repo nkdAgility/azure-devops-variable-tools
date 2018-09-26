@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "id": "variablehydration",
-  "name": "Variable (de|re)Hydration Tasks",
+  "name": "Variable Tools for Azure DevOps Services",
   "version": "#{GitVersion.Major}#.#{GitVersion.Minor}#.#{GitVersion.Patch}#",
   "public": false,
   "publisher": "nkdAgility",
@@ -13,36 +13,32 @@
       "id": "Microsoft.VisualStudio.Services"
     }
   ],
-  "description": "Includes Build tasks to save (or dehydrate) you build variables and Release tasks to help you load (or rehydrate) then in your release manegment process.",
+  "description": "Includes Build tasks to save (or dehydrate) you Azure Pipeline Build variables and Azure Pipeline Release tasks to help you load (or rehydrate) then in your Azure Pipeline Release process.",
   "categories": [
     "Build and release"
   ],
   "tags": [
     "release",
     "build",
-    "process",
-    "process template",
-    "template",
-    "upload",
-    "hydrate"
+    "variable"
   ],
   "links": {
     "learn": {
-      "uri": "http://vsts-variable-hydration-tasks.readthedocs.io"
+      "uri": "https://dev.azure.com/nkdagility/Azure-DevOps-Variable-Tools/_wiki/wikis/variable-tools"
     },
     "support": {
-      "uri": "https://github.com/nkdAgility/vsts-variable-hydration-tasks/issues"
+      "uri": "https://github.com/nkdAgility/azure-devops-variable-tools/issues"
     }
   },
   "repository": {
     "type": "git",
-    "uri": "https://github.com/nkdAgility/vsts-variable-hydration-tasks"
+    "uri": "https://github.com/nkdAgility/azure-devops-variable-tools"
   },
   "badges": [
     {
-      "href": "https://nkdagility.visualstudio.com/vsts-variable-hydration-tasks",
-      "uri": "https://nkdagility.visualstudio.com/_apis/public/build/definitions/91025b4c-c1e0-4096-b006-4be06edc3f9d/99/badge",
-      "description": "VSTS build for the project"
+      "href": "https://dev.azure.com/nkdagility/Azure-DevOps-Variable-Tools/_build?definitionId=99",
+      "uri": "https://dev.azure.com/nkdagility/Azure-DevOps-Variable-Tools/_apis/build/status/CI",
+      "description": "Azure Pipelines Build for the project"
     }
   ],
   "icons": {
