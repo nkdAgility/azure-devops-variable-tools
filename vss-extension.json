@@ -3,11 +3,8 @@
   "id": "variablehydration",
   "name": "Variable Tools for Azure DevOps Services",
   "version": "#{GitVersion.Major}#.#{GitVersion.Minor}#.#{GitVersion.Patch}#",
-  "public": false,
+  "public": true,
   "publisher": "nkdAgility",
-  "galleryFlags": [
-    "Private"
-  ],
   "targets": [
     {
       "id": "Microsoft.VisualStudio.Services"
