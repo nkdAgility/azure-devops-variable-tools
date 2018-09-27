@@ -33,7 +33,7 @@
       "helpMarkDown": "Select the json file, or files to rehydrate."
     }
   ],
-  "instanceNameFormat": "(re)Hydrate Build Variables $(jsonfiles)",
+  "instanceNameFormat": "Load Build Variables $(jsonfiles)",
   "execution": {
     "PowerShell3": {
       "target": "$(currentDirectory)\\rehydrate-variables.ps1",
