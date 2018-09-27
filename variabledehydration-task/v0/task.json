@@ -41,7 +41,7 @@
       "helpMarkDown": "Select a folder to store the dehydrated data."
     }
   ],
-  "instanceNameFormat": "(de)Hydrate Build Variables $(prefixes)",
+  "instanceNameFormat": "Save Build Variables $(prefixes)",
   "execution": {
     "PowerShell3": {
       "target": "$(currentDirectory)\\dehydrate-variables.ps1",
