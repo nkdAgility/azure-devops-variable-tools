@@ -7,7 +7,7 @@
   "publisher": "nkdAgility",
   "targets": [
     {
-      "id": "Microsoft.VisualStudio.Services"
+      "id": "Microsoft.VisualStudio.Services.Cloud"
     }
   ],
   "description": "Includes Build tasks to save (or dehydrate) you Azure Pipeline Build variables and Azure Pipeline Release tasks to help you load (or rehydrate) then in your Azure Pipeline Release process.",
