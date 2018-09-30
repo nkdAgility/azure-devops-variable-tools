@@ -15,7 +15,7 @@
     "Minor": "#{GitVersion.Minor}#",
     "Patch": "#{GitVersion.Patch}#"
   },
-  "minimumAgentVersion": "1.92.0",
+  "minimumAgentVersion": "2.103.0",
   "groups": [
     {
       "name": "missing",
