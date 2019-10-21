@@ -1,6 +1,6 @@
 # Azure DevOps Variable Tools
 
-Azure DevOps Variable Tools is an extesnion for Azure Pipleines Build and Azure Pipleines Release that help you make use of your Build variables in your Release workflows.
+Azure DevOps Variable Tools is an extension for Azure Pipleines Build and Azure Pipleines Release that help you make use of your Build variables in your Release workflows.
 
 Get the [Azure DevOps Variable Tools](https://marketplace.visualstudio.com/items?itemName=nkdagility.variablehydration) extensions for Azure DevOps Services from the Marketplace.
 
