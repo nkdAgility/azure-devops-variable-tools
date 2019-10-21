@@ -8,7 +8,7 @@ Write-VstsTaskVerbose "jsonfiles: $jsonfiles"
 
 $files = Get-ChildItem -Path $jsonfiles -Recurse
 
-Write-Output "Found $($file.count) files in $jsonfiles" 
+Write-Output "Found $($files.count) files in $jsonfiles" 
 
 if ($files.count -eq 0)
 {
@@ -23,9 +23,17 @@ foreach ($file in $files)
     Try
     {
         $results = Get-Content -Raw -Path $file | ConvertFrom-Json
-        foreach ($result in $results)
+        if ($results.Length -ne 0)
         {
-            Write-Output "##vso[task.setvariable variable=$($result.Name);]$($result.Value)"
+            Write-Output $results
+            foreach ($result in $results)
+            {
+                Write-Output "##vso[task.setvariable variable=$($result.Name);]$($result.Value)"
+            }
+        }
+        else
+        {
+            Write-Output "No variables were found in $file"
         }
     }
     Catch

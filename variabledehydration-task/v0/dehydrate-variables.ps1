@@ -19,13 +19,21 @@ foreach ($prefix in $prefixesList)
     Write-VstsTaskVerbose "Save Path: $path"
     $PrefixSearch = "Env:$prefix*"
     Write-VstsTaskVerbose "Search Prefix: $PrefixSearch"
-    Get-Childitem -Path $PrefixSearch | select Name,Value
+    $variables = Get-Childitem -Path $PrefixSearch | select Name,Value
 
     Try
     {
-        New-Item -ItemType Directory -Force -Path $outpath
-        $result = Get-Childitem -Path $PrefixSearch | select Name,Value | ConvertTo-Json | Out-File $path
-        Write-Output "created $result"
+        if ($variables.Length -ne 0)
+        {
+            Write-Output $variables
+            New-Item -ItemType Directory -Force -Path $outpath
+            $result = $variables | ConvertTo-Json | Out-File $path
+            Write-Output "created $result"
+        }
+        else
+        {
+            Write-Output "No variable names matched the prefix $prefix"
+        }
     }
     Catch
     {
